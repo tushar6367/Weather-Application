@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.85" y2="1">
+      <stop offset="0" stop-color="#1239b8"/>
+      <stop offset="1" stop-color="#25aeea"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="35%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#ffe56b"/>
+      <stop offset="1" stop-color="#ff9d18"/>
+    </radialGradient>
+    <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#9dd4ff"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9f8ff"/>
+      <stop offset="1" stop-color="#69baf2"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-opacity=".18"/>
+    </filter>
+  </defs>
+
+  <rect x="42" y="42" width="940" height="940" rx="190" fill="url(#bg)"/>
+
+  <!-- Sun -->
+  <g fill="#ffd12a" stroke="#ffd12a" stroke-width="28" stroke-linecap="round">
+    <line x1="410" y1="178" x2="410" y2="232"/>
+    <line x1="270" y1="225" x2="302" y2="264"/>
+    <line x1="205" y1="360" x2="260" y2="372"/>
+    <line x1="520" y1="235" x2="552" y2="198"/>
+  </g>
+  <circle cx="410" cy="405" r="150" fill="url(#sun)" filter="url(#shadow)"/>
+
+  <!-- Cloud -->
+  <path d="M252 693
+           C205 693 170 657 170 612
+           C170 564 207 528 254 528
+           C270 528 285 532 298 539
+           C323 479 379 440 446 440
+           C526 440 591 494 601 567
+           C620 554 644 547 670 547
+           C735 547 787 596 787 657
+           C787 677 782 696 773 712
+           L252 712 Z"
+        fill="url(#cloud)" stroke="#e9f5ff" stroke-width="8" filter="url(#shadow)"/>
+
+  <!-- Rain drops -->
+  <g fill="url(#drop)" stroke="#dff5ff" stroke-width="5">
+    <path d="M345 785 C345 785 313 830 313 855 C313 879 328 895 348 895 C368 895 383 879 383 855 C383 830 345 785 345 785Z"/>
+    <path d="M512 785 C512 785 480 830 480 855 C480 879 495 895 515 895 C535 895 550 879 550 855 C550 830 512 785 512 785Z"/>
+    <path d="M679 785 C679 785 647 830 647 855 C647 879 662 895 682 895 C702 895 717 879 717 855 C717 830 679 785 679 785Z"/>
+    <path d="M430 860 C430 860 405 896 405 916 C405 936 418 949 435 949 C452 949 465 936 465 916 C465 896 430 860 430 860Z"/>
+    <path d="M595 860 C595 860 570 896 570 916 C570 936 583 949 600 949 C617 949 630 936 630 916 C630 896 595 860 595 860Z"/>
+  </g>
+</svg>
